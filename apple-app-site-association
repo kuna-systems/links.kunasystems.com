@@ -1,17 +1,1 @@
-{
-  "applinks": {
-    "details": [
-      {
-        "appIDs": [
-          "A7GFA22M62.com.kunasystems.commercial.app"
-        ],
-        "components": [
-          {
-            "/": "/login",
-            "comment": "Login to app"
-          }
-        ]
-      }
-    ]
-  }
-}
+apple-app-site-association.json
