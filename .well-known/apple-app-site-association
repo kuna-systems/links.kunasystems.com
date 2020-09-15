@@ -8,7 +8,7 @@
         "components": [
           {
             "/": "/login",
-            "comment": "Login to app"
+            "comment": "Login to app "
           }
         ]
       }
