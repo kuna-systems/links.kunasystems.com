@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.kunasystems.idter",
+    "sha256_cert_fingerprints":
+    ["9C:90:DB:F9:EC:A0:EE:77:04:A3:A6:75:D8:39:2D:C0:37:A7:59:5D:2E:BC:92:C4:BF:E2:F9:EB:2A:E3:0C:B1"]
+  }
+}]
