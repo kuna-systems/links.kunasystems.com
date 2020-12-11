@@ -1,15 +1,37 @@
 <html lang="en-US">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+</head>
+<style>
+    .centered {
+        position: fixed; /* or absolute */
+        top: 50%;
+        left: 50%;
+    }
+</style>
+<body>
+<div class="centered">
+    <button class="mdc-button mdc-button--raised" onclick="login()">
+        <div class="mdc-button__ripple"></div>
+        <span id="info" class="mdc-button__label">Login</span>
+    </button>
+</div>
 <script>
     const parsedUrl = new URL(window.location.href);
     const sp = parsedUrl.searchParams;
-    for (const [key, value] of sp.entries()) {
-        console.debug(key, value)
+    const domain = sp.get('domain')
+    if (domain) {
+        let el = document.getElementById("info");
+        el.textContent = el.textContent + " " + domain.replace(".idter.com", ".iDter");
     }
-    dlink = "idterapp://login?domain=" + sp.get('domain') + "&company_id=" + sp.get('company_id');
-    console.debug(dlink)
-    window.location = dlink
-</script>
-<body>
 
+    function login() {
+        dlink = "idterapp://login?domain=" + sp.get('domain') + "&company_id=" + sp.get('company_id');
+        console.debug(dlink)
+        window.location = dlink
+    }
+</script>
 </body>
 </html>
