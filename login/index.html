@@ -1,0 +1,15 @@
+<html lang="en">
+<script>
+    const parsedUrl = new URL(window.location.href);
+    const sp = parsedUrl.searchParams;
+    for (const [key, value] of sp.entries()) {
+        console.debug(key, value)
+    }
+    dlink = "idterapp://login?domain=" + sp.get('domain') + "&company_id=" + sp.get('company_id');
+    console.debug(dlink)
+    window.location = dlink
+</script>
+<body>
+
+</body>
+</html>
