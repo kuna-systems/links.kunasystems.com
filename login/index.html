@@ -5,13 +5,16 @@
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
 </head>
 <style>
+    .main {
+        padding: 42px;
+    }
     .centered {
         position: fixed; /* or absolute */
-        top: 50%;
-        left: 50%;
+        left: 100px;
     }
 </style>
-<body>
+<body class="main">
+<p>Please make sure you are accessing this link with a supported iOS or Android device, and that you have the iDter app installed.</p>
 <div class="centered">
     <button class="mdc-button mdc-button--raised" onclick="login()">
         <div class="mdc-button__ripple"></div>
