@@ -11,6 +11,17 @@
             "comment": "Login to app"
           }
         ]
+      },
+      {
+        "appIDs": [
+          "A7GFA22M62.com.kunasystems.consumer.app"
+        ],
+        "components": [
+          {
+            "/": "/login",
+            "comment": "Login to app"
+          }
+        ]
       }
     ]
   }
